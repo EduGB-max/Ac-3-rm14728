@@ -104,7 +104,6 @@ module.exports = (app) =>{
         //armazenar as informações recebidas do formulário
         var dados = req.body
         //visualizar os dados
-        res.send(dados)
 
         var atualizar = await atividades.findByIdAndUpdate(
         {_id:dados.id_a},
